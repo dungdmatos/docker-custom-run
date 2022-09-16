@@ -6,6 +6,9 @@ inputs:
     description: 'Image'
     required: true
   command:
+    description: 'Commands'
+    required: false
+  options:
     description: 'Options'
     required: false
   registry:

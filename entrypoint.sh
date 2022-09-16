@@ -8,4 +8,4 @@ if [ ! -z $INPUT_DOCKER_NETWORK ];
 then INPUT_OPTIONS="$INPUT_OPTIONS --network $INPUT_DOCKER_NETWORK"
 fi
 
-exec docker run -v "/var/run/docker.sock":"/var/run/docker.sock" $INPUT_IMAGE $INPUT_COMMAND
+exec docker run -v "/var/run/docker.sock":"/var/run/docker.sock" $INPUT_OPTIONS $INPUT_IMAGE $INPUT_COMMAND
